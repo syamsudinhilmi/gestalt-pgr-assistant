@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/corner_radius_small">
+
+    <ImageView
+        android:id="@+id/iv_chars"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/tv_chars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_black">
+
+        <LinearLayout
+            android:id="@+id/tv_chars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_size_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_construct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_size_small"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h5"
+                android:textStyle="bold"
+                tools:text="Lucia" />
+
+            <TextView
+                android:id="@+id/tv_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h5"
+                tools:text="Lotus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_attrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_size_small"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_chars">
+
+            <ImageView
+                android:id="@+id/iv_chars_class"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_marginEnd="@dimen/margin_size_small"
+                android:src="@drawable/ic_chars"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_size_small"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h6"
+                tools:text="S" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rank"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h6" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

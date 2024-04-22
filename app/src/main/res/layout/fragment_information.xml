@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.detailcharacters.information.InformationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_size"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/container_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/container_def"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HP"
+                    android:textSize="@dimen/h3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h3"
+                    tools:text="1113" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_def"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/container_atk"
+                app:layout_constraintStart_toEndOf="@id/container_hp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEF"
+                    android:textSize="@dimen/h3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h3"
+                    tools:text="159" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_atk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/container_crit"
+                app:layout_constraintStart_toEndOf="@+id/container_def"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ATK"
+                    android:textSize="@dimen/h3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAtk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h3"
+                    tools:text="223" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_crit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/container_atk"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CRIT"
+                    android:textSize="@dimen/h3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCrit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h3"
+                    tools:text="223" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_information_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size"
+            android:text="Information"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size_small"
+            android:textSize="@dimen/h3"
+            tools:text="The leader of Gray Raven. Brave and selfless, she is ever at the frontline of the war against the Corrupted." />
+
+        <TextView
+            android:id="@+id/tv_speciality_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size"
+            android:text="Speciality"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_speciality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size_small"
+            android:textSize="@dimen/h3"
+            tools:text="Duel - Has strong single attack ability Dual Blades - Attack DMG boosting skill" />
+
+        <TextView
+            android:id="@+id/tv_mental_age_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size"
+            android:text="Mental Age"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_mental_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size_small"
+            android:textSize="@dimen/h3"
+            tools:text="17" />
+
+        <TextView
+            android:id="@+id/tv_activation_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size"
+            android:text="Activation Date"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_activation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size_small"
+            android:textSize="@dimen/h3"
+            tools:text="15 June" />
+
+        <TextView
+            android:id="@+id/tv_height_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size"
+            android:text="Height"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size_small"
+            android:textSize="@dimen/h3"
+            tools:text="165cm" />
+
+        <TextView
+            android:id="@+id/tv_weight_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size"
+            android:text="Weight"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size_small"
+            android:textSize="@dimen/h3"
+            tools:text="48kg" />
+
+        <TextView
+            android:id="@+id/tv_vital_fluid_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size"
+            android:text="Vital Fluid Type"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_vital_fluid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size_small"
+            android:textSize="@dimen/h3"
+            tools:text="A" />
+
+    </LinearLayout>
+
+</ScrollView>

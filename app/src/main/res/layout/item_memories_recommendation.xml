@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_size">
+
+    <ImageView
+        android:id="@+id/iv_memo"
+        android:layout_width="145dp"
+        android:layout_height="205dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/memo" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/iv_memo"
+        app:layout_constraintStart_toStartOf="@id/iv_memo"
+        app:layout_constraintTop_toBottomOf="@id/iv_memo">
+
+        <TextView
+            android:id="@+id/tv_memo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size_xsmall"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold"
+            tools:text="Patton" />
+
+        <TextView
+            android:id="@+id/tv_memo_usage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_size_xsmall"
+            android:textSize="@dimen/h3"
+            tools:text="x4" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

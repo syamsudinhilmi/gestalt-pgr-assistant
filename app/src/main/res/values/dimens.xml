@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--    Margin Size and Padding-->
+    <dimen name="margin_size">16dp</dimen>
+    <dimen name="margin_size_small">8dp</dimen>
+    <dimen name="margin_size_xsmall">4dp</dimen>
+    <dimen name="margin_size_xxsmall">2dp</dimen>
+    <dimen name="margin_size_xxxsmall">1dp</dimen>
+    <dimen name="margin_size_medium">24dp</dimen>
+    <dimen name="margin_size_large">32dp</dimen>
+    <dimen name="margin_size_xlarge">96dp</dimen>
+
+    <!--    Button Size-->
+    <dimen name="button_size">16dp</dimen>
+    <dimen name="button_size_xlarge">72dp</dimen>
+    <dimen name="button_size_large">64dp</dimen>
+    <dimen name="button_size_medium">32dp</dimen>
+    <dimen name="button_size_small">24dp</dimen>
+
+    <!--    Corner Radius-->
+    <dimen name="corner_radius">16dp</dimen>
+    <dimen name="corner_radius_large">24dp</dimen>
+    <dimen name="corner_radius_medium">12dp</dimen>
+    <dimen name="corner_radius_small">8dp</dimen>
+
+
+    <!--    text size-->
+    <dimen name="h1">24sp</dimen>
+    <dimen name="h2">20sp</dimen>
+    <dimen name="h3">16sp</dimen>
+    <dimen name="h4">14sp</dimen>
+    <dimen name="h5">12sp</dimen>
+    <dimen name="h6">10sp</dimen>
+    <dimen name="h7">8sp</dimen>
+
+</resources>

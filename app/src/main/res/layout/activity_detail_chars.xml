@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context=".ui.detailcharacters.DetailCharsActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/container_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_size"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_construct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold"
+                tools:text="Lucia" />
+
+            <TextView
+                android:id="@+id/tv_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/h3"
+                tools:text="Lotus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv_attrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_size_small"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_name">
+
+            <ImageView
+                android:id="@+id/iv_chars_class"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_marginEnd="@dimen/margin_size_small"
+                android:src="@drawable/ic_chars"
+                app:tint="?attr/colorOnPrimary" />
+
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_size_small"
+                android:textSize="@dimen/h3"
+                android:textStyle="bold"
+                tools:text="S" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rank"
+                android:textSize="@dimen/h3" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_size"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/iv_avatar_3d"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_avatar_3d">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_avatar_awaken"
+                android:layout_width="@dimen/button_size_xlarge"
+                android:layout_height="@dimen/button_size_xlarge"
+                tools:src="@tools:sample/avatars" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_avatar_dorm"
+                android:layout_width="@dimen/button_size_xlarge"
+                android:layout_height="@dimen/button_size_xlarge"
+                android:layout_marginTop="@dimen/button_size"
+                tools:src="@tools:sample/avatars" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_avatar_model"
+                android:layout_width="@dimen/button_size_xlarge"
+                android:layout_height="@dimen/button_size_xlarge"
+                android:layout_marginTop="@dimen/button_size"
+                tools:src="@tools:sample/avatars" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_avatar_3d"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_attrs"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_elements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_avatar_3d" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_elements" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?attr/actionBarSize"
+    tools:context=".ui.others.OthersFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_size"
+            android:gravity="center">
+            <ImageButton
+                android:layout_width="@dimen/button_size_medium"
+                android:layout_height="@dimen/button_size_medium"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_dark_mode"
+                android:layout_marginEnd="@dimen/margin_size"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/dark_mode"
+                android:textSize="@dimen/h4" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
